@@ -11,9 +11,9 @@ import com.shortUrl.LinkShortner.DTO.ShortLinkRequest;
 import com.shortUrl.LinkShortner.DTO.ShortLinkResponse;
 import com.shortUrl.LinkShortner.service.ShortLinkService;
 
-@CrossOrigin(origins = "http://localhost:3000") // allow React app
 @RestController
 @RequestMapping("/")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ShortLinkController {
 
     @Autowired
