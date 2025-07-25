@@ -1,0 +1,117 @@
+.shortener-container {
+  max-width: 470px;
+  margin: 80px auto;
+  padding: 32px 28px 38px 28px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.11);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* New: ensures body content lines up with full width */
+.shortener-body {
+  width: 100%;
+}
+.shortener-input-group {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.shortener-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #333;
+  padding-left: 1px;
+}
+
+/* Already present, but key to keep */
+.shortener-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.shortener-result {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 8px;
+  /* New: make sure result row lines up with inputs */
+  padding-left: 0;
+}
+
+.shortener-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+
+.shortener-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.shortener-input:focus {
+  border-color: #296be7;
+  outline: none;
+}
+
+.shortener-button {
+  background: #296be7;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.shortener-button:hover {
+  background: #154086;
+}
+
+
+
+.shortener-link {
+  font-weight: 600;
+  color: #222;
+  background: #f3f4fa;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 1.04rem;
+  word-break: break-all;
+}
+
+.shortener-copy {
+  background: #1abc81;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 13px;
+  cursor: pointer;
+}
+
+.shortener-copy:active, .shortener-copy:focus {
+  background: #138b57;
+}
+
+.shortener-error {
+  color: #c33131;
+  margin-top: 18px;
+  font-weight: 500;
+}

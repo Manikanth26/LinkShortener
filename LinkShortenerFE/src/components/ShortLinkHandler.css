@@ -1,0 +1,35 @@
+.handler-container {
+  min-height: 100vh;
+  background: #f6f8fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.handler-card {
+  background: #fff;
+  padding: 32px 38px 38px 38px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.11);
+  width: 420px;
+  text-align: center;
+}
+
+.handler-title {
+  font-size: 2rem;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+.handler-message {
+  color: #c33131;
+  font-size: 1.07rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.handler-countdown {
+  font-size: 1.05rem;
+  color: #296be7;
+  font-weight: 500;
+}
