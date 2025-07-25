@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
 }
-/* New: ensures body content lines up with full width */
+
 .shortener-body {
   width: 100%;
 }
@@ -28,7 +28,6 @@
   padding-left: 1px;
 }
 
-/* Already present, but key to keep */
 .shortener-form {
   display: flex;
   width: 100%;
@@ -42,7 +41,6 @@
   align-items: center;
   margin-top: 30px;
   gap: 8px;
-  /* New: make sure result row lines up with inputs */
   padding-left: 0;
 }
 
