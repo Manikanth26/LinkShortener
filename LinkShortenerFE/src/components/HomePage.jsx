@@ -32,7 +32,7 @@ const HomePage = () => {
       if (res.ok) {
         setShortLink(data.shortLink);
       } else {
-        setError(data.message || 'Failed to shorten URL');
+        setError(data.message || 'Something went wrong');
       }
     } catch (err) {
       setError('Server error');
