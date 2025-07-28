@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.shortUrl.LinkShortner.DTO.ResolveShortLinkResponse;
+import com.shortUrl.LinkShortner.DTO.CheckShortLinkResponse;
 import com.shortUrl.LinkShortner.DTO.ShortLinkRequest;
 import com.shortUrl.LinkShortner.DTO.ShortLinkResponse;
 import com.shortUrl.LinkShortner.service.ShortLinkService;
@@ -28,9 +28,9 @@ public class ShortLinkController {
     }
 
     @GetMapping("/check/{shortLink}")
-    public ResponseEntity<ResolveShortLinkResponse> checkShortLink(@PathVariable String shortLink) {
+    public ResponseEntity<CheckShortLinkResponse> checkShortLink(@PathVariable String shortLink) {
         Optional<String> originalUrl = shortLinkService.getOriginalUrl(shortLink);
-        ResolveShortLinkResponse response = new ResolveShortLinkResponse();
+        CheckShortLinkResponse response = new CheckShortLinkResponse();
 
         if (originalUrl.isPresent()) {
             response.setSuccess(true);

@@ -1,6 +1,6 @@
 package com.shortUrl.LinkShortner.DTO;
 
-public class ResolveShortLinkResponse {
+public class CheckShortLinkResponse {
 	
 	private boolean success;
     private String originalUrl;
