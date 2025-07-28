@@ -22,7 +22,7 @@ const HomePage = () => {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:8080/linkShortener', {
+      const res = await fetch('https://linkshortener-fzu6.onrender.com/linkShortener', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),

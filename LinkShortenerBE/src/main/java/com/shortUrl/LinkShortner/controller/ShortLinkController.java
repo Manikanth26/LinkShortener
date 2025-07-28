@@ -13,7 +13,7 @@ import com.shortUrl.LinkShortner.service.ShortLinkService;
 
 @RestController
 @RequestMapping("/")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://linkshortener-mk.netlify.app/")
 public class ShortLinkController {
 
     @Autowired
