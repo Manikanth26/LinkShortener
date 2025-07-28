@@ -11,7 +11,7 @@ const ShortLinkHandler = () => {
 
   useEffect(() => {
     if (!shortLink) return;
-    fetch(`https://linkshortener-fzu6.onrender.com/${shortLink}`)
+    fetch(`https://linkshortener-fzu6.onrender.com/check/${shortLink}`)
       .then(res => res.json())
       .then(data => {
         if (data.success && data.originalUrl) {

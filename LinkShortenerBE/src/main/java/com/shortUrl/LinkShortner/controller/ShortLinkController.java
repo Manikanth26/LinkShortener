@@ -27,8 +27,8 @@ public class ShortLinkController {
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping("/resolve/{shortLink}")
-    public ResponseEntity<ResolveShortLinkResponse> resolveShortLinkApi(@PathVariable String shortLink) {
+    @GetMapping("/check/{shortLink}")
+    public ResponseEntity<ResolveShortLinkResponse> checkShortLink(@PathVariable String shortLink) {
         Optional<String> originalUrl = shortLinkService.getOriginalUrl(shortLink);
         ResolveShortLinkResponse response = new ResolveShortLinkResponse();
 
